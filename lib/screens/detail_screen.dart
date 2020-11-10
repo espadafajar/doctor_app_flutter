@@ -50,7 +50,9 @@ class DetailScreen extends StatelessWidget {
                   child: ListView(
                     controller: scrollController,
                     children: [
-                      ProfileDetailScreen(model: model,),
+                      ProfileDetailScreen(
+                        model: model,
+                      ),
                       SizedBox(
                         height: 25,
                       ),
@@ -207,7 +209,9 @@ class DetailScreen extends StatelessWidget {
                 Icons.arrow_back_ios,
                 color: Colors.white,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
             ),
           ),
         ],
